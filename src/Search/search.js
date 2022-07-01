@@ -49,7 +49,7 @@ const loadSearchUi = () => {
                                                                          <div class="errorContainer">
                                                                            <div class="error">
                                                                              <img src="../../assets/images_movie and covid/noResults.png" alt="" class="itemImg" height="150">
-                                                                             <p class="itemTitle">Sorry, no results found! found</p>
+                                                                             <p class="itemTitle">Sorry, no results found!</p>
                                                                              <p>Please check the spelling or try searching for something else</p>
                                                                            </div>
                                                                           </div>
