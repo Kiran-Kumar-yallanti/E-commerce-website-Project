@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images_movie and covid/favIcon.png" type="image/x-icon">
+    <title>Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--============================================= NAVIGATION START ================================-->
+    <nav>
+      <div class="navContainer">
+        <div class="logo" onclick="window.location.href='/index.html'">
+          <img src="./assets/images_movie and covid/logo.jpg" width="90px" alt="logo" />
+        </div>
+        <div class="searchContainer">
+          <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+          <input
+            type="text"
+            class="searchInput"
+            placeholder="Search for products"
+          />
+          <button class="searchBtn">Search</button>
+        </div>
+        <div class="cartContainer" onclick="window.location.href='./src/Cart/cart.html'">
+          <p id="cartNumber">0</p>
+          <i class="fa-solid fa-cart-shopping fa-2x"></i>
+          <p class="cart">Cart</p>
+        </div>
+      </div>
+    </nav>
+    <!--============================================= NAVIGATION END ================================-->
+
+    <!--============================================= CATEGORY START ================================-->
+    <div class="category">
+      <div class="categoryLogoContainer">
+        <div class="categoryItem" onclick="window.location.href='./src/Mobiles/mobile.html'">
+          <img
+            src="./assets/images_mobile/iphone-13-mini.webp"
+            alt="Mobiles"
+            class="mobileLogo"
+          />
+          <p class="categoryTitle">Mobiles</p>
+        </div>
+
+        <div class="categoryItem" onclick="window.location.href='./src/Tv/tv.html'">
+          <img
+            src="./assets/images_TV/iffalcon-164cm.webp"
+            alt="Television"
+            class="tvLogo"
+          />
+          <p class="categoryTitle">Television</p>
+        </div>
+
+        <div class="categoryItem" onclick="window.location.href='./src/Laptops/laptop.html'">
+          <img
+            src="./assets/images_computer/dell5518i.webp"
+            alt="Laptops"
+            class="laptopLogo"
+          />
+          <p class="categoryTitle">Laptops</p>
+        </div>
+
+        <div class="categoryItem" onclick="window.location.href='./src/Cycles/cycles.html'">
+          <img
+            src="./assets/images_cycle/mtb-500.webp"
+            alt="Cycles"
+            class="cycleLogo"
+          />
+          <p class="categoryTitle">Cycles</p>
+        </div>
+
+        <div class="categoryItem" onclick="window.location.href='./src/Headphones/Headphones.html'">
+          <img
+            src="./assets/images_headphones/apple-airpods.webp"
+            alt="Headphones"
+            class="headphonesLogo"
+          />
+          <p class="categoryTitle">Headphones</p>
+        </div>
+      </div>
+    </div>
+    <!--============================================= CATEGORY END ================================-->
+  <!--============================================= MOVIE AND COVID START ================================-->
+  <div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./assets/images_movie and covid/iphone2.jfif" ></div>
+        <div class="swiper-slide"><img src="./assets/images_movie and covid/iphone3.jfif"></div>
+        <div class="swiper-slide"><img src="./assets/images_movie and covid/iphone4.jfif"></div>
+        <div class="swiper-slide"><img src="./assets/images_movie and covid/iphone5.jfif"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!--============================================= MOVIE AND COVID END ================================-->
+    <!--============================================= NEW ARRIVAL START ================================-->
+
+    <main>
+      <div class="newArrivalContainer" style="padding-bottom : 2em;">
+        <div class="newArrivalText">
+          <span style="font-size: 22px;">Amazing deals on Prime subscription</span>
+        </div>
+
+        <div class="newArrivalProductContainer">
+          <div class="newArrivalProduct">
+            <img
+              src="./assets/images_mobile/iphone-13.webp"
+              alt=""
+              class="newArrivalProductImage"
+              height="150"
+            />
+            <p class="productTitle">Iphone 13(128gb)</p>
+            <div class="priceContainer">
+              <span class="priceLineThrough">&#8377; 79,999</span>
+              <span>
+                <span>
+                  <span class="price">
+                    <span> &#8377; 73,999</span>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="newArrivalProduct">
+            <img
+              src="./assets/images_computer/msi-gp65.webp"
+              alt="MSI GP65 Leopard"
+              class="newArrivalProductImage"
+              height="150"
+            />
+            <p class="productTitle">MSI GP65 Leopard</p>
+            <div class="priceContainer">
+              <span class="priceLineThrough">&#8377; 1,45,990</span>
+              <span>
+                <span>
+                  <span class="price">
+                    <span> &#8377; 1,09,990</span>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="newArrivalProduct">
+            <img
+              src="./assets/images_cycle/torfin-26t-mtb-bicycle.webp"
+              alt=""
+              class="newArrivalProductImage"
+              height="150"
+            />
+            <p class="productTitle">LEADER TORFIN 26T MTB</p>
+            <div class="priceContainer">
+              <span class="priceLineThrough">&#8377; 12,552</span>
+              <span>
+                <span>
+                  <span class="price">
+                    <span> &#8377; 7,799</span>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="newArrivalProduct">
+            <img
+              src="./assets/images_headphones/apple-airpodsbox.webp"
+              alt="Apple airpods"
+              class="newArrivalProductImage"
+              height="150"
+            />
+            <p class="productTitle">Apple airpods pro</p>
+            <div class="priceContainer">
+              <span class="priceLineThrough">&#8377; 24,990</span>
+              <span>
+                <span>
+                  <span class="price">
+                    <span> &#8377; 21,400</span>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--============================================= NEW ARRIVAL END ================================-->
+
+  
+
+    <!--============================================= FOOTER START ================================-->
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footerLinks">
+          <div class="footerSection">
+            <ul>
+              <li class="footerHeading">LINKS</li>
+              <li class="footerListItem"><a href="https://github.com/Kiran-Kumar-yallanti/E-commerce-website-Project" target="_blank">Source Code</a></li>
+              <li class="footerListItem"><a href="https://www.facebook.com/uxfactory?hc_location=timeline" target="_blank" >UX Factory</a></li>
+            </ul>
+          </div>
+
+          <div class="footerSection">
+            <ul>
+              <li class="footerHeading">KiranKumar</li>
+              <li class="footerListItem"><a href="https://github.com/Kiran-Kumar-yallanti" target="_blank">GitHub</a></li>
+              <li class="footerListItem"><a  href="mailto:ykirankumar26@gmail.com" target="_blank">Gmail</a></li>
+            </ul>
+          </div>
+
+          <div class="footerSection">
+            <ul>
+              <li class="footerHeading">Products</li>
+              <li class="footerListItem"><a href="src/Mobiles/mobile.html"  target="_blank" >Mobiles</a></li>
+              <li class="footerListItem"><a href="src/Tv/tv.html" target="_blank" >Television</a></li>
+              <li class="footerListItem"><a href="src/Laptops/laptop.html" target="_blank" >Laptops</a></li>
+              <li class="footerListItem"><a href="src/Headphones/Headphones.html" target="_blank" >Headphones</a></li>
+              <li class="footerListItem"><a href="src/Cycles/cycles.html" target="_blank" >Cycles</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopyright">
+        <span>&#169;</span>
+        <span>2022 All rights not reserved :D</span>
+        <span>A project by </span>
+        <span>Kiran Yallanti</span>
+      </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

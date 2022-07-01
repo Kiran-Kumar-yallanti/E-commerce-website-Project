@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images_movie and covid/favIcon.png"
+      type="image/x-icon"
+    />
+    <title>Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <script defer src="../Data.js"></script>
+    <script defer src="cart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.css"
+    />
+    <script src="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.js"></script>
+  </head>
+  <body>
+    <!--============================================= NAVIGATION START ================================-->
+    <nav>
+      <div class="navContainer">
+        <div class="logo" onclick="window.location.href='../../index.html'">
+          <img
+            src="../../assets/images_movie and covid/logo.jpg"
+            width="90px"
+            alt="logo"
+          />
+        </div>
+        <div
+          class="cartContainer"
+          onclick="window.location.href='../Cart/cart.html'"
+        >
+          <p id="cartNumber">0</p>
+          <i class="fa-solid fa-cart-shopping fa-2x"></i>
+          <p class="cart">Cart</p>
+        </div>
+      </div>
+    </nav>
+    <!--============================================= NAVIGATION END ================================-->
+
+    <main id="mainbar">
+      <div class="billContainer">
+        <h3 class="cartItems">
+          Total Items : <span class="totalCartNumber">0</span>
+        </h3>
+        <h3 class="totalBill">
+          Total bill : <span class="totalBillNumber">0</span>
+        </h3>
+        <button class="checkOut">Checkout</button>
+        <button class="clearCart" onclick="clearCart()">Clear Cart</button>
+      </div>
+      <div class="cartPageContainer"></div>
+    </main>
+
+    <div class="container">
+      <h1 class="heading-primary">Frequently Asked Questions</h1>
+      <div class="accordion">
+        <dl>
+          <dt>
+            <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Do you also have a physical store?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+            <p>  No, we don’t have a physical store location at the moment. We accept
+              only orders through our online shop and we’re shipping all orders
+              with the Post Service. Please visit our shipping section for
+              more details. From time to time you will find us at design fairs and
+              popup markets in India. Subscribe to our newsletter and you’ll
+              receive the latest news.</p>
+          </dd>
+          <dt>
+            <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+              Why do the prices in the shop sometimes change?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+            <p>  Prices depend largely on factors such as the shipping cost, customs
+              duties, and general price changes imposed by our suppliers and the
+              individual publishers. We therefore have to pass any changes in
+              costs on to our customers. For subscription orders, however, the
+              prices are not changed until the subscription is renewed. The prices
+              at the time of ordering always apply. </p>
+          </dd>
+          <dt>
+            <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+              What are your payment methods?
+            </a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+            <p>  Currently you can pay using your credit card (Visa, Mastercard and
+              Amexco) via Stripe. We also accept payments via PayPal, TWINT and
+              Apple Pay or you can transfer the amount to our bank account via
+              direct bank transfer (advance payment). On your credit card
+              statement, you will find your purchase listed as sent to “LOREM NOT
+              IPSUM MAGS” (statement descriptor). Please take a look on the
+              payments section for more details.</p>
+          </dd>
+          <dt>
+            <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+              How much does shipping cost me?
+            </a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+            <p> Shipping costs depend on the weight of the complete order and destination. The shipping costs will be shown during checkout.
+              We offer free shipping to all across India with orders of over CHF 80.</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+
+
+      <!-- <div class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            How much does shipping cost me?
+          </button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Shipping costs depend on the weight of the complete order and destination. The shipping costs will be shown during checkout.
+            We offer free shipping to Switzerland and Liechtenstein with orders of over CHF 80.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!--============================================= FOOTER START ================================-->
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footerLinks">
+          <div class="footerSection">
+            <ul>
+              <li class="footerHeading">LINKS</li>
+              <li class="footerListItem"><a href="https://github.com/Kiran-Kumar-yallanti/E-commerce-website-Project" target="_blank">Source Code</a></li>
+              <li class="footerListItem"><a href="https://www.facebook.com/uxfactory?hc_location=timeline" target="_blank" >UX Factory</a></li>
+            </ul>
+          </div>
+
+          <div class="footerSection">
+            <ul>
+              <li class="footerHeading">KiranKumar</li>
+              <li class="footerListItem"><a href="https://github.com/Kiran-Kumar-yallanti" target="_blank">GitHub</a></li>
+              <li class="footerListItem"><a  href="mailto:ykirankumar26@gmail.com" target="_blank">Gmail</a></li>
+            </ul>
+          </div>
+
+          <div class="footerSection">
+            <ul>
+              <li class="footerHeading">Products</li>
+              <li class="footerListItem"><a href="../../src/Mobiles/mobile.html"  target="_blank" >Mobiles</a></li>
+              <li class="footerListItem"><a href="../../src/Tv/tv.html" target="_blank" >Television</a></li>
+              <li class="footerListItem"><a href="../../src/Laptops/laptop.html" target="_blank" >Laptops</a></li>
+              <li class="footerListItem"><a href="../../src/Headphones/Headphones.html" target="_blank" >Headphones</a></li>
+              <li class="footerListItem"><a href="../../src/Cycles/cycles.html" target="_blank" >Cycles</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopyright">
+        <span>&#169;</span>
+        <span>2022 All rights not reserved :D</span>
+        <span>A project by </span>
+        <span>Kiran Yallanti</span>
+      </div>
+    </footer>
+
+  <script>
+//uses classList, setAttribute, and querySelectorAll
+//if you want this to work in IE8/9 youll need to polyfill these
+(function () {
+  var d = document,
+    accordionToggles = d.querySelectorAll(".js-accordionTrigger"),
+    setAria,
+    setAccordionAria,
+    switchAccordion,
+    touchSupported = "ontouchstart" in window,
+    pointerSupported = "pointerdown" in window;
+
+  skipClickDelay = function (e) {
+    e.preventDefault();
+    e.target.click();
+  };
+
+  setAriaAttr = function (el, ariaType, newProperty) {
+    el.setAttribute(ariaType, newProperty);
+  };
+  setAccordionAria = function (el1, el2, expanded) {
+    switch (expanded) {
+      case "true":
+        setAriaAttr(el1, "aria-expanded", "true");
+        setAriaAttr(el2, "aria-hidden", "false");
+        break;
+      case "false":
+        setAriaAttr(el1, "aria-expanded", "false");
+        setAriaAttr(el2, "aria-hidden", "true");
+        break;
+      default:
+        break;
+    }
+  };
+  //function
+  switchAccordion = function (e) {
+    console.log("triggered");
+    e.preventDefault();
+    var thisAnswer = e.target.parentNode.nextElementSibling;
+    var thisQuestion = e.target;
+    if (thisAnswer.classList.contains("is-collapsed")) {
+      setAccordionAria(thisQuestion, thisAnswer, "true");
+    } else {
+      setAccordionAria(thisQuestion, thisAnswer, "false");
+    }
+    thisQuestion.classList.toggle("is-collapsed");
+    thisQuestion.classList.toggle("is-expanded");
+    thisAnswer.classList.toggle("is-collapsed");
+    thisAnswer.classList.toggle("is-expanded");
+
+    thisAnswer.classList.toggle("animateIn");
+  };
+  for (var i = 0, len = accordionToggles.length; i < len; i++) {
+    
+    if (pointerSupported) {
+      accordionToggles[i].addEventListener(
+        "pointerdown",
+        skipClickDelay,
+        false
+      );
+    }
+    accordionToggles[i].addEventListener("click", switchAccordion, false);
+  }
+})();
+
+
+  </script>
+  </body>
+</html>
